@@ -16,7 +16,12 @@ app.set('view engine', 'handlebars');
 
 
 app.get('/', (req, res) => {
-    res.render('home')
+
+    const users = User.findAll({ raw: true })
+
+    console.log(users)
+
+    res.render('home', {users: users})
 })
 
 app.get('/users/create', (req, res) => {

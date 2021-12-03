@@ -22,11 +22,10 @@ const sequelize = new Sequelize('nodejscurso', DB_USER, DB_PASSWORD, {
 )
 
 
-try {
-    sequelize.authenticate()
-    console.log('Conectamos com sucesso o Sequelize')
-}catch(err) {
-    console.log('não foi possivel conectar: ', error)
-}
-
 module.exports = sequelize
+// try {
+//     sequelize.authenticate()
+//     console.log('Conectamos com sucesso o Sequelize')
+// }catch(err) {
+//     console.log('não foi possivel conectar: ', error)
+// }

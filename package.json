@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.12.0-alpha.1"
+  },
+  "scripts": {
+    "start": "nodemon ./server.js localhost 3000"
+  },
+  "name": "example_sequelize",
+  "description": "examplo de codigo sequilize para consulta",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maikonmuniz/example_sequelize.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maikonmuniz/example_sequelize/issues"
+  },
+  "homepage": "https://github.com/maikonmuniz/example_sequelize#readme"
+}

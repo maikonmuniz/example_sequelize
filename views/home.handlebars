@@ -1,6 +1,12 @@
 <p>ola mundo</p>
+<div>
 {{#each users}}
 <div class='item'>
     <p>{{this.name}}</p>
+    <a href='/users/{{this.id}}'>Ver detalhe</a>
+    <form action='/users/delete/{{this.id}}' method="post">
+        <input type="submit" value="Excluir">
+    </form>
 </div>
 {{/each}}
+</div>
